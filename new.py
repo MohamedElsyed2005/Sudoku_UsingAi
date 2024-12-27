@@ -38,6 +38,7 @@ def CSP_helper(board, r, c, result):
     for i in range(1, 10):
         if i not in arrx and i not in arry and i not in arrxy:
             board[r][c] = i  
+            print(board)
             if c < 8:
                 CSP_helper(board, r, c + 1, result)
             else:
@@ -47,5 +48,4 @@ def CSP(board):
     result = [None]  
     CSP_helper(board = board,r = 0,c=0, result = result)
     return result[0]
-
 print(CSP(board))
