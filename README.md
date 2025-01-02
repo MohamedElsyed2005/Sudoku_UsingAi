@@ -1,2 +1,2 @@
 # Sudoku_UsingAi
-Sudoku using UCP algorthim 
+Sudoku using CSP algorthim 
